@@ -1,6 +1,6 @@
 package com.example.demo.controllers;
 
-import com.example.demo.objects.TA_Setor_Item;
+import com.example.demo.objects.TA_Setores.TA_Setor_Item;
 import com.example.demo.services.SetorItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

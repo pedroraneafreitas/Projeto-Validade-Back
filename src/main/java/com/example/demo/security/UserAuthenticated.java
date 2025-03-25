@@ -1,9 +1,8 @@
 package com.example.demo.security;
 
-import com.example.demo.objects.Usuario;
+import com.example.demo.objects.Usuarios.Usuario;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.List;
@@ -25,7 +24,7 @@ public class UserAuthenticated implements UserDetails {
 
     @Override
     public String getPassword() {
-        return user.getSenha();
+        return user.getUsuarioSenha();
     }
 
     @Override

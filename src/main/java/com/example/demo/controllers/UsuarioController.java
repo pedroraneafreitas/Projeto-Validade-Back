@@ -1,6 +1,6 @@
 package com.example.demo.controllers;
 
-import com.example.demo.objects.Usuario;
+import com.example.demo.objects.Usuarios.Usuario;
 import com.example.demo.services.UsuarioService;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

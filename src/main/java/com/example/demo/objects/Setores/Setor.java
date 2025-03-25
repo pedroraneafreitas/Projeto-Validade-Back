@@ -1,5 +1,6 @@
-package com.example.demo.objects;
+package com.example.demo.objects.Setores;
 
+import com.example.demo.objects.Usuarios.Usuario;
 import jakarta.persistence.*;
 
 @Entity

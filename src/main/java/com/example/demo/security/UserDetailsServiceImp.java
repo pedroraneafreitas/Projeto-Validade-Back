@@ -1,8 +1,6 @@
 package com.example.demo.security;
 
-import com.example.demo.objects.Usuario;
 import com.example.demo.repository.UsuarioRepository;
-import com.example.demo.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -20,4 +18,10 @@ public class UserDetailsServiceImp implements UserDetailsService {
                 .map(UserAuthenticated::new)
                 .orElseThrow(() -> new UsernameNotFoundException("Usuario não Encontrado"));
     }
-}
+
+    public UserDetails loadUserByLogin(String userName, String userPassword){
+        return user.findByNomeUsuarioAndUsuarioSenha(userName, userPassword)
+                .map(UserAuthenticated::new)
+                .orElseThrow(() -> new UsernameNotFoundException("Usuario não Encontrado"));
+
+    }}

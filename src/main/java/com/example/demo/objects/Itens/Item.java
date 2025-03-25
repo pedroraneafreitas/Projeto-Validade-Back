@@ -1,9 +1,7 @@
-package com.example.demo.objects;
+package com.example.demo.objects.Itens;
 
 
 import jakarta.persistence.*;
-
-import java.sql.Date;
 
 @Entity
 @Table(name = "item")

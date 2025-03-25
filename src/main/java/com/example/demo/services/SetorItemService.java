@@ -1,6 +1,6 @@
 package com.example.demo.services;
 
-import com.example.demo.objects.TA_Setor_Item;
+import com.example.demo.objects.TA_Setores.TA_Setor_Item;
 import com.example.demo.repository.SetorItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

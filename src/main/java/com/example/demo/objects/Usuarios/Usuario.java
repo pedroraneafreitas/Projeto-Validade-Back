@@ -1,4 +1,4 @@
-package com.example.demo.objects;
+package com.example.demo.objects.Usuarios;
 
 import jakarta.persistence.*;
 
@@ -11,7 +11,7 @@ public class Usuario {
     private Long idUsuario;
 
     @Column(name = "usuarioSenha")
-    private String senha;
+    private String usuarioSenha;
 
     @Column(name = "nomeUsuario")
     private String nomeUsuario;
@@ -22,15 +22,6 @@ public class Usuario {
     @Column(name = "ativo")
     private Boolean ativo;
 
-
-
-    public Usuario(Long idUsuario, String senha, String nomeUsuario, String role) {
-        this.idUsuario = idUsuario;
-        this.senha = senha;
-        this.nomeUsuario = nomeUsuario;
-        this.role = role;
-    }
-
     public Long getIdUsuario() {
         return idUsuario;
     }
@@ -39,20 +30,20 @@ public class Usuario {
         this.idUsuario = idUsuario;
     }
 
+    public String getUsuarioSenha() {
+        return usuarioSenha;
+    }
+
+    public void setUsuarioSenha(String usuarioSenha) {
+        this.usuarioSenha = usuarioSenha;
+    }
+
     public String getNomeUsuario() {
         return nomeUsuario;
     }
 
     public void setNomeUsuario(String nomeUsuario) {
         this.nomeUsuario = nomeUsuario;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
     }
 
     public String getRole() {
@@ -71,3 +62,6 @@ public class Usuario {
         this.ativo = ativo;
     }
 }
+
+
+
